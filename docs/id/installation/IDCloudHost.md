@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # IDCloudHost
@@ -19,8 +19,8 @@ Ikuti langkah berikut ini:
 4. Tambahkan *Cloud Provider* di dPanel
 ![paste-token-idcloudhost](./../../assets/idcloudhost-register-token.png)
 
-5. Buat SSH Key dari dPanel
+5. Buat SSH Key di dPanel
 ![create-ssh-keygen](./../../assets/create-ssh-key.png)
 
-5. Buat Virtual Machine dari dPanel
+5. Buat Virtual Machine di dPanel
 ![create-vm-idcloudhost](./../../assets/create-virtual-machine.png)
