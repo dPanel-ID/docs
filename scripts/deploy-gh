@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export BASE_URL="/docs/"
+export BASE_URL="/"
 export GIT_USER="prakasa1904"
 
 npm run deploy
