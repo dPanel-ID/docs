@@ -1,0 +1,25 @@
+version: v0.0.1-alpha.0
+
+setup:
+  language:
+    name: nodejs
+    version: v18.19.0
+
+build:
+  target:
+    machine:
+      workdir: .
+      steps:
+        - name: "Build dPanel documentation"
+          command:
+            - npm i
+            - npm run build
+
+run:
+  name: dpanel-docs
+  description: dPanel Documentations
+  command: node node_modules/.bin/docusaurus serve
+  port: 3002
+  environment:
+    - key: PORT
+      value: 3002
