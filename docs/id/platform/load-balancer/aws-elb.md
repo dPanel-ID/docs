@@ -1,0 +1,3 @@
+# Elastic Load Balancing
+
+Elastic Load Balancing (ELB) adalah layanan dari Amazon Web Services (AWS) yang secara otomatis mendistribusikan trafik masuk ke beberapa instans aplikasi atau server di berbagai zona ketersediaan (Availability Zones). Dengan menggunakan ELB, Anda dapat memastikan aplikasi Anda memiliki ketersediaan tinggi, dapat diandalkan, dan mampu menangani lonjakan trafik tanpa mengorbankan performa. Layanan ini dirancang untuk bekerja dengan aplikasi yang terdistribusi dan dapat menangani trafik yang sangat tinggi, memberikan skalabilitas otomatis dan performa yang optimal.
