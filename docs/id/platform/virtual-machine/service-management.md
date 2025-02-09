@@ -11,4 +11,4 @@ Management systemd service
 3. Trigger Service
 
 
-Informasi tentang systemd dapat kamu temukan di [sini](https://github.com/systemd).
+Pelajari tentang systemd di [sini](https://github.com/systemd).
