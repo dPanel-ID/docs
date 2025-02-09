@@ -151,3 +151,4 @@ Untuk mempermudah pengguna, dPanel menyediakan template yang dapat digunakan seb
 - [Remix](https://github.com/dPanel-ID/remix-example)
 - [Modern.js](https://github.com/dPanel-ID/modernjs-example)
 - [Golang](https://github.com/dPanel-ID/go-example)
+- [Flask + uWSGI](https://github.com/dPanel-ID/flask-example)
