@@ -4,33 +4,38 @@ sidebar_position: 2
 
 # Manual
 
-Mendaftarkan mesin dari berbagai cloud provider menggunakan SSH private key yang dibuat dari dPanel. Akan mengurangi waktu instalasi server secara manual
+Di halaman ini, kami menjelaskan langkah demi langkah cara menginstal dPanel di server dengan manual.
 
-1. Buat SSH Key di dPanel
+Untuk instalasi, Anda memerlukan server kosong dengan Ubuntu 24.04 atau 22.04 atau Debian 12 atau 11 dengan akses root.
 
-![create-ssh-keygen](./../../assets/create-ssh-key.png)
+Anda dapat membuat SSH key di dPanel, dari halaman [ini](https://cloud.terpusat.com/v2/secret-managers/ssh-key).
 
-2. Open SSH Key
+### Buat SSH Key
 
-![open-ssh-pubkey](./../../assets/open-ssh-key.png)
+![create-ssh-keygen](./../../assets/create-ssh-key-dark.png)
 
-3. Copy SSH Public Key
+### Copy SSH Public Key
 
-![copy-ssh-pubkey](./../../assets/copy-ssh-key.png)
+![copy-ssh-pubkey](./../../assets/copy-ssh-key-dark.png)
 
-4. Login via SSH to the Server.
+### Login via SSH ke server.
 
 ```sh
 ssh <yourUser>@<yourIpAddress>
 ```
 
-5. Paste SSH public key ke dalam mesin di file `~/.ssh/authorized_keys`
+Tempel SSH public key ke dalam mesin di file `~/.ssh/authorized_keys`
 
-6. Buat Virtual Machine External di dPanel
+### Daftarkan server 
 
-![create-virtual-machine-external](./../../assets/create-virtual-machine-external.png)
+Buat server baru di dPanel melalui link [di sini](https://cloud-beta.terpusat.com/v2/resources/servers/create).
 
+![create-server-manual](./../../assets/create-server-manual-dark.png)
 
-6. Setup Virtual Machine External di dPanel
+### Isi Data Server
 
-![create-virtual-machine-external](./../../assets/setup-virtual-machine.png)
+Masukkan informasi server yang telah dibuat, pilih provider, pilih SSH key yang telah dibuat, masukkan informasi alamat server, SSH port, dan port `dPanel Agent`. 
+
+Jika ingin menjalankan `dPanel Agent` didalam lingkungan TSL/SSL, isi `dPanel Agent Address (Optional)` dengan domain, contoh: `dpanel-ip-123-45-241-167.domainkamu.com`. Kamu dapat membuat Load Balancer [di sini](https://cloud.terpusat.com/router) setelah proses instalasi server selesai.
+
+![create-server-manual-input](./../../assets/create-server-manual-input-dark.png)
