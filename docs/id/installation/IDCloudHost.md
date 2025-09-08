@@ -4,23 +4,36 @@ sidebar_position: 3
 
 # IDCloudHost
 
-Mendaftarkan mesin dari IDCloudHost menggunakan access token, untuk mempermudah proses pengelolaan IDCloudHost virtual machine dari satu dashboard terintegrasi.
+Membuat server IDCloudHost dari dPanel, mempermudah pengelolaan server secara terpadu tanpa perlu berpindah-pindah dashboard.
 
-Ikuti langkah berikut ini:
+Ikuti langkah berikut:
 
-1. Login ke [console IDCloudHost](https://console.idcloudhost.com/hub/login)
+### Login IDCloudHost Console 
 
-2. Masuk ke menu Access, kemudian buat token
+Kunjungi halaman login [console IDCloudHost](https://console.idcloudhost.com/hub/login) dan login dengan akun IDCloudHost.
+
+### Buat Token
+
+Buat token di IDCloudHost console yang akan digunakan di dPanel.
+
 ![create-token-idcloudhost](./../../assets/idcloudhost-token.png)
 
-3. Salin *Token* di halaman detail token
+Salin *Token* di halaman detail token
+
 ![copy-token-idcloudhost](./../../assets/idcloudhost-token-detail.png)
 
-4. Tambahkan *Cloud Provider* di dPanel
-![paste-token-idcloudhost](./../../assets/idcloudhost-register-token.png)
+### Buat *Cloud Provider* IDCloudHost
 
-5. Buat SSH Key di dPanel
-![create-ssh-keygen](./../../assets/create-ssh-key.png)
+Buat Cloud Project baru di dPanel, dan pilih provider `IDCloudHost`.
 
-5. Buat Virtual Machine di dPanel
-![create-vm-idcloudhost](./../../assets/create-virtual-machine.png)
+![paste-token-idcloudhost](./../../assets/create-cloud-project-idcloudhost-dark.png)
+
+### Buat server instant
+
+Masuk ke halaman buat server [di sini](https://cloud.terpusat.com/v2/resources/servers/create), dan buat server instant.
+
+![create-server-instant-idcloudhost](./../../assets/create-server-instant-dark.png)
+
+Gunakan provider `IDCloudHost` dan pilih token yang sudah dibuat. Lalu masukkan informasi server, seperti regional, CPU, RAM, dan disk, dan lain-lain.
+
+![create-server-instant-input-idcloudhost](./../../assets/create-server-instant-input-dark.png)
